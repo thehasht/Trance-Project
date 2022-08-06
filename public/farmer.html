@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href='./css/bootstrap.min.css' />
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1 class="display-4">Farmer Sign In</h1>
+      </div>
+      <form action="/farmer-signin" method="POST">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            aria-describedby="emailHelp"
+            placeholder="Enter Name"
+            name="name"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="pan">Pan</label>
+          <input
+            type="text"
+            class="form-control"
+            id="pan"
+            aria-describedby="emailHelp"
+            placeholder="Enter PAN"
+            name="pan"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="aadhar">Aadhar</label>
+          <input
+            type="text"
+            class="form-control"
+            id="aadhar"
+            aria-describedby="emailHelp"
+            placeholder="Enter aadhar"
+            name="aadhar"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="contact">Contact</label>
+          <input
+            type="text"
+            class="form-control"
+            id="contact"
+            aria-describedby="emailHelp"
+            placeholder="Enter contact"
+            name="contact"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="aadhar">Aadhar</label>
+          <input
+            type="text"
+            class="form-control"
+            id="aadhar"
+            aria-describedby="emailHelp"
+            placeholder="Enter aadhar"
+            name="aadhar"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="location">Location</label>
+          <input
+            type="text"
+            class="form-control"
+            id="location"
+            placeholder="location"
+            name="Enter location"
+          />
+        </div>
+      </form>
+
+      <form action="/farmer-login" method="GET">
+        <button class="btn btn-primary">Sign In</button>
+        <button type="submit" class="btn btn-secondary">
+          Already have an account? Log In
+        </button>
+      </form>
+    </div>
+  </body>
+</html>

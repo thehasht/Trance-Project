@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            document.addEventListener('DOMContentLoaded', function(){
+                const urlParams = new URLSearchParams(window.location.search)
+                const formElement = document.getElementsByTagName('form')[0]
+                formElement.setAttribute('action', '/farmer-product?pan=' + urlParams.get('pan'))
+                console.log(formElement)
+            })
+        </script>
+    </head>
+    <body>
+        <form method="POST">
+            <label>Product: </label>
+            <input type="text" placeholder="Product" name="product"><br>
+            <label>Quantity: </label>
+            <input type="number" placeholder="Quantity" name="quantity"><br>
+            <label>Price: </label>
+            <input type="number" placeholder="Price" name="price"><br>
+            <button>Upload</button>
+        </form>
+    </body>
+</html>

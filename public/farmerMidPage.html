@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            document.addEventListener('DOMContentLoaded', function(){
+                const urlParams = new URLSearchParams(window.location.search)
+                const profileForm = document.getElementById('profile')
+                const productForm = document.getElementById('product')
+                profileForm.setAttribute('action', '/farmer-profile-temp?pan=' + urlParams.get('pan'))
+                productForm.setAttribute('action', '/farmer-product-temp?pan=' + urlParams.get('pan'))
+            })
+        </script>
+    </head>
+    <body>
+        <form id="profile" method="POST">
+            <button>Farmer Profile</button>
+        </form>
+        <form id="product" method="POST">
+            <button>Upload Produce</button>
+        </form>
+    </body>
+</html>

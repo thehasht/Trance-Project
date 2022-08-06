@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            document.addEventListener('DOMContentLoaded', function(){
+                const urlParams = new URLSearchParams(window.location.search)
+                
+                const pname = document.getElementById('pname')
+                pname.innerHTML = urlParams.get('name')
+
+                const prating = document.getElementById('prating')
+                prating.innerHTML = urlParams.get('aadhar')
+
+                const pcontact = document.getElementById('pcontact')
+                pcontact.innerHTML = urlParams.get('contact')
+
+                const plocation = document.getElementById('plocation')
+                plocation.innerHTML = urlParams.get('location')
+            })
+        </script>
+    </head>
+    <body>
+        <div>
+            <label>Name: <p id="pname"></p></label>
+        </div>
+        <div>
+            <label>Aadhar: <p id="prating"></p></label>
+        </div>
+        <div>
+            <label>Contact: <p id="pcontact"></p></label>
+        </div>
+        <div>
+            <label>Location: <p id="plocation"></p></label>
+        </div> 
+    </body>
+</html>

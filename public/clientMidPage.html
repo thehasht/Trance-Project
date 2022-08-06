@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            document.addEventListener('DOMContentLoaded', function(){
+                const urlParams = new URLSearchParams(window.location.search)
+                const profileForm = document.getElementById('profile')
+                const productForm = document.getElementById('product')
+                profileForm.setAttribute('action', '/client-profile-temp?aadhar=' + urlParams.get('aadhar'))
+                productForm.setAttribute('action', '/client-product-temp?aadhar=' + urlParams.get('aadhar'))
+            })
+        </script>
+    </head>
+    <body>
+        <form id="profile" method="POST">
+            <button>Client Profile</button>
+        </form>
+        <form id="product" method="POST">
+            <button>Buy Produce</button>
+        </form>
+    </body>
+</html>
