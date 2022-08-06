@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link rel="stylesheet" href="client.css">
+    </head>
+    <body>
+        <form action="/client-signin" method="POST">
+            <label>Name: </label>
+            <input type="text" placeholder="Name" name="name"><br>
+            <label>Aadhar: </label>
+            <input type="number" placeholder="Aadhar" name="aadhar"><br>
+            <label>Contact: </label>
+            <input type="number" placeholder="Contact" name="contact"><br>
+            <label>Password: </label>
+            <input type="password" placeholder="password" name="password"><br>
+            <label>Location: </label>
+            <input type="text" placeholder="location" name="location"><br>
+            <button>Sign In</button>
+        </form>
+        <form action="/client-login" method="GET">
+            <button>Already have an account? Log In</button>
+        </form>
+    </body>
+</html>
